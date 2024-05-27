@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -10,8 +11,10 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { useRouter } from "next/navigation";
 
 export function LoginForm() {
+  const router =useRouter();
   return (
     <>
       <Card className="mx-auto max-w-sm">
@@ -44,7 +47,7 @@ export function LoginForm() {
               </div>
               <Input id="password" type="password" required />
             </div>
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full" onClick={()=>{router.push('/table')}}>
               Login
             </Button>
           </div>
