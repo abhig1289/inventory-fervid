@@ -1,25 +1,16 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
-  AlignJustify,
   Box,
   CirclePlus,
-  Clipboard,
   ClipboardList,
   ClipboardMinus,
   CornerRightDown,
   Database,
   Eye,
-  LayoutDashboard,
   LogOutIcon,
-  Maximize,
-  Maximize2,
-  Minimize2,
-  Settings,
   ShoppingCart,
-  User,
 } from "lucide-react";
 
 interface MenuItem {
