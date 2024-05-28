@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label";
 import { useRouter } from "next/navigation";
 
 export function LoginForm() {
-  const router =useRouter();
+  const router = useRouter()
   return (
     <>
       <Card className="mx-auto max-w-sm">
@@ -47,7 +47,7 @@ export function LoginForm() {
               </div>
               <Input id="password" type="password" required />
             </div>
-            <Button type="submit" className="w-full" onClick={()=>{router.push('/table')}}>
+            <Button type="submit" className="w-full" onClick={()=>router.push('/dashboard')}>
               Login
             </Button>
           </div>

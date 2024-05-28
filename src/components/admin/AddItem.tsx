@@ -28,7 +28,7 @@ const AddItem = () => {
     };
 
     return (
-        <div className='p-20'>
+        <div>
             <Card className='h-[150vh] w-[83vw]'>
                 <div className='box-border border-b-2 h-[10vh] pt-5 pl-5'>
                     Add Product

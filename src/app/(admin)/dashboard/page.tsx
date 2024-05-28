@@ -4,9 +4,10 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <TableDemo />
+  <TableDemo />
     </div>
   )
 }
 
 export default page
+

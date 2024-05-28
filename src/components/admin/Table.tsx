@@ -156,7 +156,7 @@ export function TableDemo() {
     });
 
     return (
-        <div className="p-20">
+        <div>
             <Card className="h-[95vh] w-[83vw]">
                 <div className="pl-10 pt-5 flex h-[5vw] flex-col text-2xl">
                     Inward Items List
@@ -169,7 +169,7 @@ export function TableDemo() {
                             <button
                                 type="button"
                                 className="float-right w-[11vw] h-10 rounded-lg bg-[#32bdea] text-base font-medium text-white hover:bg-[#32bdea] focus:outline-none focus:ring-4 "
-                                onClick={() => { router.push('/table/additem') }}
+                                onClick={() => { router.push('/dashboard/additem') }}
                             >
                                 + Add InwardItems
                             </button>
