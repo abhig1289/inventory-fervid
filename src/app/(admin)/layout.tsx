@@ -16,7 +16,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
       <div className="flex flex-col basis-[16%] bg-white text-black drop-shadow-md">
         <Sidebar />
       </div>
-      <main className="flex-1 p-4 bg-white">{children}</main>
+      <main className="flex-1 bg-white">{children}</main>
     </div>
   </div>
   );
