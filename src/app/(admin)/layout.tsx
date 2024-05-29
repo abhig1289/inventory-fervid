@@ -10,13 +10,13 @@ interface DashboardLayoutProps {
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col">
-    <Header heading={""} />
+    <div className="min-h-screen flex flex-col fixed z-10 w-full">
+    <Header  heading={""}/>
     <div className="flex flex-1">
-      <div className="flex flex-col basis-[16%] bg-white text-black drop-shadow-md">
+      <div className="flex flex-col basis-[18%] bg-white text-black drop-shadow-md">
         <Sidebar />
       </div>
-      <main className="flex-1 bg-white">{children}</main>
+      <main className="flex-1 bg-white overflow-scroll">{children}</main>
     </div>
   </div>
   );

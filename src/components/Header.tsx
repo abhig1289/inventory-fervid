@@ -1,4 +1,4 @@
-import { Bell, Mail, Maximize2, Plus, Search } from "lucide-react";
+import { Bell, Globe, Mail, Maximize2, Plus, Search } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -14,7 +14,6 @@ import {
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -22,7 +21,7 @@ import {
 } from "@/components/ui/dialog";
 import { Label } from "./ui/label";
 
-interface DashboardHeaderProps {
+type DashboardHeaderProps = {
   heading: string;
   text?: string;
   children?: React.ReactNode;
@@ -30,9 +29,9 @@ interface DashboardHeaderProps {
 
 export default function Header({ children }: DashboardHeaderProps) {
   return (
-    <div className="flex items-center justify-between px-2 py-4 bg-white drop-shadow-md">
-      <div className="flex pb-2 pt-2 px-4 text-md font-semibold">
-        <Maximize2 />
+    <div className="flex items-center justify-between px-2 py-4 drop-shadow-md border-b-2">
+      <div className="flex pb-2 pt-2 px-4 text-lg font-semibold">
+        <Globe />
         <span className="ml-4">POSDash</span>
       </div>
       <div className="flex justify-between w-full pl-24">
