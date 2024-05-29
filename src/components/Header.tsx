@@ -1,4 +1,4 @@
-import { Bell, Globe, Mail, Maximize2, Plus, Search } from "lucide-react";
+import { Bell, DatabaseZap, Globe, Mail, Maximize2, Plus, Search } from "lucide-react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -29,14 +29,14 @@ type DashboardHeaderProps = {
 
 export default function Header({ children }: DashboardHeaderProps) {
   return (
-    <div className="flex items-center justify-between px-2 py-4 drop-shadow-md border-b-2">
-      <div className="flex pb-2 pt-2 px-4 text-lg font-semibold">
-        <Globe />
-        <span className="ml-4">POSDash</span>
+    <div className="flex items-center justify-between px-2 py-4 border-b-2">
+      <div className="flex pb-2 pt-2 px-4 text-xl font-semibold">
+        <DatabaseZap />
+        <span className="ml-2">InventoryDash</span>
       </div>
       <div className="flex justify-between w-full pl-24">
         <div className="flex items-center relative w-full max-w-md">
-          <span className="absolute left-8 ">
+          <span className="absolute left-4">
             <Search className="text-gray-400 " size={15} />
           </span>
           <Input type="search" placeholder="Search here..." className="pl-12" />

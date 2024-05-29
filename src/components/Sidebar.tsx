@@ -22,14 +22,14 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className=" sidebar bg-white text-black h-full shadow-xl">
-      <nav className="mt-6">
+    <div className=" sidebar text-black h-auto min-h-[100vh] shadow-xl overflow-y-auto">
+      <nav >
         {SideBarNavItems.map((item) => (
           <div key={item.name}>
             <div
               className={`flex items-center px-4 py-3 mt-2 rounded-md text-sm cursor-pointer ${
                 active === item.name.toLowerCase()
-                  ? "bg-gray-100 text-black"
+                  ? "bg-gray-200 text-black"
                   : ""
               }`}
               onClick={() =>
@@ -38,13 +38,13 @@ const Sidebar: React.FC = () => {
                   : handleSetActive(item.name, item.path)
               }
             >
-              <span className="w-6 flex justify-center text-gray-600">
+              <span className="ml-3 flex justify-center text-gray-600">
                 {item.icon}
               </span>
               <span className="ml-3 flex-grow">{item.name}</span>
               {item.subItems && (
                 <span
-                  className={`w-6 flex justify-center text-gray-600 transition-transform transform ${
+                  className={`w-6 pt-2 flex justify-center text-gray-600 transition-transform transform ${
                     openSubMenu === item.name ? "rotate-90" : ""
                   }`}
                   onClick={() => toggleSubMenu(item.name)}
@@ -58,9 +58,9 @@ const Sidebar: React.FC = () => {
                 {item.subItems.map((subItem) => (
                   <div
                     key={subItem.name}
-                    className={`flex items-center px-4 py-2 mt-1 rounded-lg text-sm cursor-pointer ${
+                    className={`flex items-center px-4 py-2 mt-1 rounded-md text-sm cursor-pointer ${
                       active === subItem.name.toLowerCase()
-                        ? "bg-gray-600 text-white"
+                        ? "bg-gray-200 text-black"
                         : ""
                     }`}
                     onClick={() => handleSetActive(subItem.name, subItem.path)}
