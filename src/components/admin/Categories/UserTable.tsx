@@ -1,8 +1,9 @@
 "use client"
 import { Eye, Pen, Trash2 } from "lucide-react";
-import { Checkbox } from "../ui/checkbox";
-import GenericTable from "../commons/GenericTable";
+
 import { ColumnDef, createColumnHelper } from "@tanstack/react-table";
+import { Checkbox } from "@/components/ui/checkbox";
+import GenericTable from "@/components/commons/GenericTable";
 
 type User = {
     firstName: string
