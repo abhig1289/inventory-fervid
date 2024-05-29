@@ -1,11 +1,12 @@
+import ListReturns from '@/components/Returns/ListReturns'
 import React from 'react'
 
-const page = () => {
+const ListReturnsPage = () => {
   return (
-    <div>
-        list-returns
-    </div>
+    <>
+        <ListReturns/>
+    </>
   )
 }
 
-export default page
+export default ListReturnsPage

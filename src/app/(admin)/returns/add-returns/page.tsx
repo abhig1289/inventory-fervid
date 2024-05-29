@@ -1,11 +1,12 @@
+import AddReturns from '@/components/Returns/AddReturns'
 import React from 'react'
 
-const page = () => {
+const AddReturnsPage = () => {
   return (
     <div>
-        add-returns
+       <AddReturns/>
     </div>
   )
 }
 
-export default page
+export default AddReturnsPage
