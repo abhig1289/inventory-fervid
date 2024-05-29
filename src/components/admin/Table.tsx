@@ -194,7 +194,7 @@ export function TableDemo() {
                             </select>entries
                         </span>
 
-                        <label htmlFor="search" className="flex flex-row pl-[52vw]">
+                        <label htmlFor="search" className="flex flex-row pl-[45vw]">
                             Search:
                             <input
                                 className=" box-border border-2 "
