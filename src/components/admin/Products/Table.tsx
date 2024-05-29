@@ -12,9 +12,11 @@ import {
 } from "@tanstack/react-table";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Checkbox } from "../ui/checkbox";
+// import { Checkbox } from "../ui/checkbox";
 import { Eye, Pen, Trash2 } from "lucide-react";
-import { Card } from "../ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Card } from "@/components/ui/card";
+// import { Card } from "../ui/card";
 
 type Invoice = {
     invoice: string;
