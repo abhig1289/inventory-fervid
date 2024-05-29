@@ -1,5 +1,5 @@
 import Sidebar from "@/components/Sidebar";
-import Header from "@/components/Header"
+import Header from "@/components/Header";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,16 +10,22 @@ interface DashboardLayoutProps {
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col fixed z-10 w-full">
-    <Header  heading={""}/>
-    <div className="flex flex-1">
-      <div className="flex flex-col basis-[18%] bg-white text-black drop-shadow-md">
-        <Sidebar />
+    <div className="min-h-screen flex flex-col w-full">
+      <div className="fixed w-full z-40 bg-white">
+        <Header heading="" />
       </div>
-      <main className="flex-1 bg-white overflow-scroll">{children}</main>
+      <div className="flex flex-1 pt-[5rem] w-full">
+        {" "}
+        <div className="fixed h-full w-[15rem] bg-white text-black drop-shadow-md z-40">
+          <Sidebar />
+        </div>
+        <div className="flex-1 ml-[15rem] overflow-y-auto overflow-x-hidden max-w-[calc(100%-15rem)] max-h-[calc(100vh-5rem)] z-30">
+          {" "}
+          {children}
+        </div>
+      </div>
     </div>
-  </div>
   );
-}
+};
 
-export default DashboardLayout
+export default DashboardLayout;
