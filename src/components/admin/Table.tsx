@@ -16,7 +16,7 @@ import { Checkbox } from "../ui/checkbox";
 import { Eye, Pen, Trash2 } from "lucide-react";
 import { Card } from "../ui/card";
 
-interface Invoice {
+type Invoice = {
     invoice: string;
     paymentStatus: string;
     totalAmount: string;
@@ -169,7 +169,7 @@ export function TableDemo() {
                             <button
                                 type="button"
                                 className="float-right w-[11vw] h-10 rounded-lg bg-[#32bdea] text-base font-medium text-white hover:bg-[#32bdea] focus:outline-none focus:ring-4 "
-                                onClick={() => { router.push('/dashboard/additem') }}
+                                onClick={() => { router.push('/products/add') }}
                             >
                                 + Add InwardItems
                             </button>
