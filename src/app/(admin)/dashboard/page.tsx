@@ -1,10 +1,10 @@
-import { TableDemo } from '@/components/admin/Table'
+import Dashboard from '@/components/admin/Dashboard/dashboard'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-  <TableDemo />
+  <Dashboard />
     </div>
   )
 }

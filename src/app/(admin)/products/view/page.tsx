@@ -1,4 +1,4 @@
-import { TableDemo } from '@/components/admin/Table'
+import { TableDemo } from '@/components/admin/Products/Table'
 import React from 'react'
 
 const page = () => {
