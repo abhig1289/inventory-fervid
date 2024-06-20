@@ -12,7 +12,7 @@ import {
 import { useState } from "react";
 import { Card } from "../ui/card";
 
-interface GenericTableProps<T> {
+  type GenericTableProps<T> = {
   data: T[];
   columns: ColumnDef<T>[];
 }
